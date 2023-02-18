@@ -5,3 +5,7 @@ output "id" {
 output "principal_id" {
   value = azurerm_automation_account.this.identity[0].principal_id
 }
+
+output "name" {
+  value = azurerm_automation_account.this.name
+}
