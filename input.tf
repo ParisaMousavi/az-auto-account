@@ -19,3 +19,10 @@ variable "sku_name" {
   type    = string
   default = "Basic"
 }
+
+variable "identityconfig" {
+  type = object({
+    type         = string
+    identity_ids = list(string)
+  })
+}
